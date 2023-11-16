@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.brand-bg-animation {
+  background-size: 200% 200%;
+  animation: brand-bg 3s ease-in-out infinite;
+}
+
+@keyframes brand-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#overlay {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.089) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
