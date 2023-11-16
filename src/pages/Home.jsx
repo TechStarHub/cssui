@@ -1,11 +1,10 @@
 import BaseLayout from '../layouts/BaseLayout';
+import Hero from '../components/Home/Hero';
 
 export default function Home() {
   return (
     <BaseLayout>
-      <div className="">
-        <h1 className="text-4xl mt-20">Home</h1>
-      </div>
+      <Hero />
     </BaseLayout>
   );
 }
