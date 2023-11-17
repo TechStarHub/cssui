@@ -1,6 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import Loader from './components/Loader';
 
-import Home from './pages/Home';
+const Home = lazy(() => import('./pages/Home'));
+
+export const SuspenseProvider = ({ children }) => (
+  <Suspense fallback={<Loader />}>{children}</Suspense>
+);
+
 const BrowserRouter = createBrowserRouter([
   {
     path: '/',

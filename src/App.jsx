@@ -1,8 +1,13 @@
 import BrowserRouter from './routes';
 import { RouterProvider } from 'react-router-dom';
+import { SuspenseProvider } from './routes';
 
 function App() {
-  return <RouterProvider router={BrowserRouter} />;
+  return (
+    <SuspenseProvider>
+      <RouterProvider router={BrowserRouter} />
+    </SuspenseProvider>
+  );
 }
 
 export default App;
