@@ -72,7 +72,7 @@ export default function Header() {
             </button>
             {toolsMenuOpen && (
               <NavDropDown>
-                <div className="grid grid-cols-3 grid-flow-row gap-3 bg-[#454545] text-center rounded w-[350px]">
+                <div className="grid grid-cols-2 grid-flow-row gap-3 bg-[#454545] text-center rounded w-[350px]">
                   <Link
                     to="/tools"
                     className="bg-[#20262E] px-2 py-1 rounded hover:bg-slate-700"
@@ -80,10 +80,10 @@ export default function Header() {
                     All
                   </Link>
                   <Link
-                    to="/tools/typography"
+                    to="/tools/glassmorphism"
                     className="bg-[#20262E] px-2 py-1 rounded hover:bg-slate-700"
                   >
-                    Typography
+                    Glassmorphism
                   </Link>
                   <Link
                     to="/tools/box-shadow"
@@ -126,7 +126,7 @@ export default function Header() {
             </button>
             {elementMenuOpen && (
               <NavDropDown>
-                <div className="grid grid-cols-3 grid-flow-row gap-2 text-center w-[300px] ">
+                <div className="grid grid-cols-2 grid-flow-row gap-2 text-center w-[300px] ">
                   <Link
                     to="/elements/buttons"
                     className="bg-[#20262E] px-2 py-1 rounded hover:bg-slate-700"

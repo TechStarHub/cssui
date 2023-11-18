@@ -7,6 +7,11 @@
   animation: brand-bg 3s ease-in-out infinite;
 }
 
+.brand-bg-animation-400 {
+  background-size: 400% 400%;
+  animation: brand-bg 10s ease-in-out infinite;
+}
+
 @keyframes brand-bg {
   0% {
     background-position: 0% 50%;
